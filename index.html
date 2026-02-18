@@ -1,41 +1,118 @@
-export default function LecheFlanPreorder() {
-  return (
-    <div className="min-h-screen bg-amber-50 flex items-center justify-center p-6">
-      <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-amber-900">
-          [Your Brand Name]
-        </h1>
-        
-        <p className="mt-4 text-lg text-amber-700">
-          Now accepting PRE-ORDERS 🍮
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leche Flan Preorder</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fef3c7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        {/* Image Placeholder */}
-        <div className="mt-8 w-full h-80 bg-amber-100 rounded-2xl flex items-center justify-center shadow-md">
-          <p className="text-amber-600 text-lg">Product Image Placeholder</p>
-        </div>
+    .container {
+      background: white;
+      max-width: 600px;
+      width: 90%;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-        <div className="mt-8 space-y-3 text-amber-800">
-          <p>✔ Made with fresh eggs & premium milk</p>
-          <p>✔ Rich caramel topping</p>
-          <p>✔ Perfect for family gatherings & celebrations</p>
-        </div>
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #78350f;
+    }
 
-        <div className="mt-8">
-          <p className="text-2xl font-bold text-amber-700">$00 per tray</p>
-          <p className="text-sm text-amber-600 mt-2">
-            Pre-order at least 2 days in advance.
-          </p>
-        </div>
+    .subtitle {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #92400e;
+    }
 
-        <button className="mt-8 px-8 py-3 bg-amber-600 text-white rounded-2xl shadow-lg hover:bg-amber-700 transition text-lg">
-          Contact Placeholder
-        </button>
+    .image-placeholder {
+      margin-top: 30px;
+      height: 250px;
+      background-color: #fde68a;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #92400e;
+      font-size: 18px;
+    }
 
-        <p className="mt-10 text-xs text-amber-600">
-          Pickup location: [Your Location Here]
-        </p>
-      </div>
+    .features {
+      margin-top: 30px;
+      color: #78350f;
+      line-height: 1.8;
+    }
+
+    .price {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #b45309;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #a16207;
+      margin-top: 5px;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #d97706;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #b45309;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #a16207;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>[Your Brand Name]</h1>
+    <div class="subtitle">Now accepting PRE-ORDERS 🍮</div>
+
+    <div class="image-placeholder">
+      Product Image Placeholder
     </div>
-  );
-}
+
+    <div class="features">
+      ✔ Made with fresh eggs & premium milk<br>
+      ✔ Rich caramel topping<br>
+      ✔ Perfect for family gatherings & celebrations
+    </div>
+
+    <div class="price">$00 per tray</div>
+    <div class="note">Pre-order at least 2 days in advance.</div>
+
+    <button class="button">Contact Placeholder</button>
+
+    <div class="footer">
+      Pickup location: [Your Location Here]
+    </div>
+  </div>
+</body>
+</html>
